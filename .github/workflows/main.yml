@@ -17,7 +17,7 @@ jobs:
       - name: Read the Txt file 
         run: |
           ls -l 
-          cat roy.txt
+          cat example.txt
       
 
 
