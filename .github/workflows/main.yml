@@ -1,1 +1,27 @@
+name: Print Txt file
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+ 
+jobs:
+  read_the_file:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git Checkout Korta hba
+        uses: actions/checkout@v2
+      - name: Read the Txt file 
+        run: |
+          ls -l 
+          cat roy.txt
+      
+
+
+
+
+
 
